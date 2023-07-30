@@ -14,7 +14,7 @@ function App() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
@@ -108,7 +108,7 @@ function App() {
       </div>
       <div className="banner4" id="portfolio">
         <Slider {...settings}>
-          <div>
+        <div className="slide-container">
             <h3 className="slide-title">OpenScan</h3>
             <p className="slide-text">Introducing OpenScan: Your CLI Sidekick for Easy Vulnerability Scanning!
                         <br></br>
@@ -118,7 +118,7 @@ function App() {
                         Get OpenScan, and let's make vulnerability scanning a breeze. Say goodbye to worries, and scan like a pro! 🚀🔒</p>
             <img src={OpenScanImage} alt="OpenScan" className="slide-image" />
           </div>
-          <div>
+          <div className="slide-container">
             <h3 className="slide-title">Halloween-game</h3>
             <p className="slide-text">Get ready for a spooktacular adventure this Halloween, brought to you by ByteBurst! 🎃👻
                         <br></br>
@@ -130,14 +130,15 @@ function App() {
                         <br></br>
               So, are you ready for a Halloween adventure like no other? Join us, and let's make this Halloween unforgettable! 🎉🎊</p>
           </div>
-          <div>
+          <div className="slide-container">
             <h3 className="slide-title">Website</h3>
             <p className="slide-text">I make simple webpages to a competitive price.
             </p>
             <img src={jazzigtImage} alt="Jazzigt" className="slide-image" />
           </div>
         </Slider>
-      </div>
+      </div>        
+      <img src={logo} alt="Byte Burst Logo" className="slider-logo" />
     </div>
   );
 }
