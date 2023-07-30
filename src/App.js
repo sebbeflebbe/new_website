@@ -2,8 +2,21 @@ import logo from './byteburstlogo.remade.png';
 import sebastianImage from './Sebastian_bild.jpg'; // Import the image
 import './App.css';
 import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from 'react';
+import Slider from "react-slick";
+import jazzigtImage from './Jazzigt.png';
+import OpenScanImage from './OpenScanNew.jpg'; // Import the image
+
+
 
 function App() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <div className="App">
       <div className="header">
@@ -67,6 +80,38 @@ function App() {
     <a href="https://www.linkedin.com/company/byteburst/?viewAsMember=true" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
     <a href="https://github.com/sebbeflebbe" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
       </p>
+      </div>
+      <div className="banner4">
+      <Slider {...settings}>
+          <div>
+            <h3 className="slide-title">OpenScan</h3>
+            <p className="slide-text">Introducing OpenScan: Your CLI Sidekick for Easy Vulnerability Scanning!
+                        <br></br>
+                        Hey developers, meet OpenScan! It's the ultimate CLI solution for swift vulnerability scanning. No fuss, no hassle – just fire up your command line, and OpenScan does the rest!
+                        With OpenScan, you'll effortlessly scan your projects for vulnerabilities at lightning speed. We've made it user-friendly for pros and newbies alike. Stay secure without slowing down!
+                        OpenScan plays nice with various platforms and languages. It's the perfect balance of effectiveness and ease.
+                        Get OpenScan, and let's make vulnerability scanning a breeze. Say goodbye to worries, and scan like a pro! 🚀🔒</p>
+                        <img src={OpenScanImage} alt="Jazzigt" className="slide-image" /> {/* Add this line */}
+          </div>
+          <div>
+          <h3 className="slide-title">Halloween-game</h3>
+          <p className="slide-text">Get ready for a spooktacular adventure this Halloween, brought to you by ByteBurst! 🎃👻
+                        <br></br>
+                        Picture this: Geocaching meets Halloween, and it's going down in the breathtaking city of Gothenburg! 🗺️🌆
+                        <br></br>
+                        We've cooked up a thrilling game that'll have you searching for hidden treasures around famous landmarks. It's like a real-life treasure hunt, but with a spooky twist! 🕵️‍♂️🏰
+                        <br></br>
+                        Get your crew together and unleash your inner explorer as you decipher clues and unearth hidden caches. Feel the excitement rise as you venture through the city's iconic spots, all while the Halloween spirit is in full swing! 🌙🦇
+                        <br></br>
+                        So, are you ready for a Halloween adventure like no other? Join us, and let's make this Halloween unforgettable! 🎉🎊</p>
+          </div>
+          <div>
+            <h3 className="slide-title">Website</h3>
+            <p className="slide-text">I make simple webpages to a competitive price.
+            </p>
+            <img src={jazzigtImage} alt="Jazzigt" className="slide-image" /> {/* Add this line */}
+          </div>
+          </Slider>
       </div>
     </div>
   );
