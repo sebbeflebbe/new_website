@@ -182,5 +182,13 @@
   margin-right: auto; /* Add this line to center the image */
 }
 
+.banner-button {
+  font-family: 'Bungee', serif;
+  color: #0c3e3e;
+  background: none;
+  border: none;
+  font-size: 15px; /* Adjust as needed */
+  margin: 7px; /* Adjust as needed */
+}
 
 

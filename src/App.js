@@ -6,6 +6,7 @@ import React from 'react';
 import Slider from "react-slick";
 import jazzigtImage from './Jazzigt.png';
 import OpenScanImage from './OpenScanNew.jpg'; // Import the image
+import { Link } from 'react-scroll'; // Import the Link component
 
 
 
@@ -23,11 +24,36 @@ function App() {
         <img src={logo} alt="Byte Burst Logo" className="logo" />
         <p className="header-text">BYTEBURST</p>
       </div>
-      <div className="banner"></div>
+      <div className="banner">
+      <Link
+          to="missionAndVision" // This should match the id of the target element
+          smooth={true} // Enable smooth scrolling
+          duration={500} // Time for scroll animation
+          className="banner-button"
+        >
+          About us
+        </Link>
+        <Link
+          to="consultants" // This should match the id of the target element
+          smooth={true} // Enable smooth scrolling
+          duration={500} // Time for scroll animation
+          className="banner-button"
+        >
+          Consultants
+        </Link>
+        <Link
+          to="portfolio" // This should match the id of the target element
+          smooth={true} // Enable smooth scrolling
+          duration={500} // Time for scroll animation
+          className="banner-button"
+        >
+          Portfolio
+        </Link>
+      </div>
       <div className="banner2">
         <p className="banner2-text">FUELING TECH EXCELLENCE ONE BYTE AT A TIME</p>
       </div>
-      <p className="title">Our mission and vision</p>
+      <p className="title" id="missionAndVision">Our mission and vision</p>
       <div className="columns">
         <p className="column-text">Founded in 2023 by Sebastian Andersson, a junior developer with a passion for technology, ByteBurst is a software development company committed to delivering excellent results for clients. We are a young team that embraces challenges, seeks growth opportunities, and prioritizes customer satisfaction.
     Our mission is to provide flexible and cost-effective software solutions tailored to meet individual needs. We value continuous learning, take on diverse projects, and offer innovative solutions to clients.
@@ -39,7 +65,7 @@ function App() {
       <div className="banner3">
         <div className="columns3">
           <div className="column3-container">
-            <p className="column3-title">Presentation</p>
+            <p className="column3-title" id="consultants">Presentation</p>
             <p className="column3-text">Meet Sebastian, a junior software developer with a unique background in political science, 
             auditing, and education. His diverse experience has honed a broad perspective and a rich skill set, now applied to 
             technology. His adaptability and eagerness to embrace new challenges are evident in his career transition, showcasing his 
@@ -49,7 +75,7 @@ function App() {
             can make.</p>
           </div>
           <div className="column3-container">
-            <p className="column3-title">Skillset</p>
+            <p className="column3-title" id="portfolio">Skillset</p>
             <p className="column3-text">
               Java / Linux /
               Aws / Python /
