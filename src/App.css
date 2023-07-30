@@ -49,7 +49,34 @@
 }
 
 .banner2-text {
-  color: #e9841d;
+  color: #fbf1dd;
   font-size: 25px; /* Adjust this value as needed */
   font-family: 'Changa', sans-serif; /* Add this line */
+}
+
+.title {
+  position: absolute;
+  top: 280px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 34px; /* Adjust this value as needed */
+  font-family: 'Cormorant SC', serif;
+  color: #0c3e3e;
+}
+
+.columns {
+  position: absolute;
+  top: 380px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.column-text {
+  color: #0c3e3e;
+  font-size: 17px; /* Adjust this value as needed */
+  font-family: 'Cormorant SC', serif; /* Add this line */
+  margin: 0 40px; /* Add this line */
 }
