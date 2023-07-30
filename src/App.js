@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import logo from './byteburstlogo.remade.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <img src={logo} alt="Byte Burst Logo" className="logo" />
+        <p className="header-text">BYTEBURST</p>
+      </div>
+      <div className="banner"></div>
     </div>
   );
 }
