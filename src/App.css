@@ -25,7 +25,7 @@
 
 .header-text {
   font-family: 'Bungee', sans-serif;
-  color: #e9841d;
+  color: #0c3e3e;
   margin-left: 175px;
   font-size: 40px; /* Add this line */
 }
@@ -35,6 +35,21 @@
   top: 150px; /* Adjust this value as needed */
   left: 0;
   width: 100%;
-  height: 75px; /* Adjust this value as needed */
+  height: 60px; /* Adjust this value as needed */
+  background-color: #e9841d;
+}
+
+.banner2 {
+  position: absolute;
+  top: 210px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  height: 75px;
   background-color: #0c3e3e;
+}
+
+.banner2-text {
+  color: #e9841d;
+  font-size: 25px; /* Adjust this value as needed */
+  font-family: 'Changa', sans-serif; /* Add this line */
 }
