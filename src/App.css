@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
 .App {
   text-align: center;
   background-color: #fbf1dd;
@@ -60,8 +62,8 @@
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 34px; /* Adjust this value as needed */
-  font-family: 'Cormorant SC', serif;
+  font-size: 30px; /* Adjust this value as needed */
+  font-family: 'Bungee', sans-serif;
   color: #0c3e3e;
 }
 
@@ -77,6 +79,69 @@
 .column-text {
   color: #0c3e3e;
   font-size: 17px; /* Adjust this value as needed */
-  font-family: 'Cormorant SC', serif; /* Add this line */
+  font-family: 'Abhaya libre', serif;
   margin: 0 40px; /* Add this line */
 }
+
+.banner3 {
+  position: absolute;
+  top: 600px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  height: 420px;
+  background-color: #e9841d; /* Add this line */
+}
+
+.columns3 {
+  position: absolute;
+  top: 10px; /* Adjust this value as needed */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.column3-text {
+  color: #0c3e3e;
+  font-size: 17px;
+  font-family: 'Abhaya libre', serif;
+  margin: 0 30px; /* Adjust this value as needed */
+}
+
+.column3-title {
+  color: #0c3e3e;
+  font-size: 30px;
+  font-family: 'Bungee', sans-serif;
+  margin-bottom: 10px; /* Add this line */
+}
+
+.column3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 100px; /* Add this line */
+}
+
+.sebastian-image {
+  width: 170%; /* Adjust this value as needed */
+  height: auto; /* Adjust this value as needed */
+  margin-left: 20px; /* Add this line */
+  margin-right: 20px; /* Add this line */
+  border: 2px solid black; /* Add this line */
+  margin-top: 80px; /* Add this line */
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0c3e3e;
+  padding: 10px 0;
+}
+
+.footer a {
+  color: #fbf1dd;
+  margin: 0 30px;
+}
+
