@@ -116,7 +116,7 @@ function App() {
                         With OpenScan, you'll effortlessly scan your projects for vulnerabilities at lightning speed. We've made it user-friendly for pros and newbies alike. Stay secure without slowing down!
                         OpenScan plays nice with various platforms and languages. It's the perfect balance of effectiveness and ease.
                         Get OpenScan, and let's make vulnerability scanning a breeze. Say goodbye to worries, and scan like a pro! 🚀🔒</p>
-            <img src={OpenScanImage} alt="OpenScan" className="slide-image" />
+            <img src={OpenScanImage} alt="OpenScan" className="slide-image_1" />
           </div>
           <div className="slide-container">
             <h3 className="slide-title">Halloween-game</h3>
@@ -129,16 +129,16 @@ function App() {
               Get your crew together and unleash your inner explorer as you decipher clues and unearth hidden caches. Feel the excitement rise as you venture through the city's iconic spots, all while the Halloween spirit is in full swing! 🌙🦇
                         <br></br>
               So, are you ready for a Halloween adventure like no other? Join us, and let's make this Halloween unforgettable! 🎉🎊</p>
+              <img src={logo} alt="Byte Burst Logo" className="slider-logo" />
           </div>
           <div className="slide-container">
             <h3 className="slide-title">Website</h3>
             <p className="slide-text">I make simple webpages to a competitive price.
             </p>
-            <img src={jazzigtImage} alt="Jazzigt" className="slide-image" />
+            <img src={jazzigtImage} alt="Jazzigt" className="slide-image_2" />
           </div>
         </Slider>
       </div>        
-      <img src={logo} alt="Byte Burst Logo" className="slider-logo" />
     </div>
   );
 }

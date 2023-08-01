@@ -20,7 +20,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 150px;
+  height: 20vh; /* Changed from 150px to 15vh */
   width: auto;
 }
 
@@ -35,51 +35,57 @@
 .header-text {
   font-family: 'Bungee', sans-serif;
   color: #0c3e3e;
-  margin-left: 175px;
-  font-size: 40px;
+  margin-left: 10vw; /* Changed from 175px to 10vw */
+  font-size: 3vw; /* Changed from 40px to 3vw */
+  position: relative; /* Add this line */
+  top: -6vh; /* Add this line, adjust the value as needed */
 }
 
 .banner {
   position: absolute;
-  top: 150px;
+  top: 20vh; /* Changed from 150px to 15vh */
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 12vh; /* Changed from 60px to 6vh */
   background-color: #e9841d;
   text-align: right;
   padding-right: 0px; /* Add this line */
 }
 
-
 .banner2 {
   position: absolute;
-  top: 210px;
+  top: 32vh; /* Changed from 210px to 21vh */
   left: 0;
   width: 100%;
-  height: 90px;
+  height: 11vh; /* Changed from 90px to 9vh */
   background-color: #0c3e3e;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
 }
 
 .banner2-text {
   color: #fbf1dd;
-  font-size: 30px;
+  font-size: 2.5vw; /* Changed from 30px to 2.5vw */
   font-family: 'Changa', sans-serif;
+  z-index: 1;
 }
+
 
 .title {
   position: absolute;
-  top: 280px;
-  margin:20px 40px;
+  top: 43vh; /* Changed from 280px to 28vh */
+  margin: 1.5vh 5vw; /* Changed from 20px 40px to 1.5vh 4vw */
   width: 100%;
   text-align: left;
-  font-size: 30px;
+  font-size: 2.2vw; /* Changed from 30px to 2.5vw */
   font-family: 'Bungee', sans-serif;
   color: #0c3e3e;
 }
 
 .columns {
   position: absolute;
-  top: 380px;
+  top: 55vh; /* Changed from 380px to 38vh */
   left: 0;
   width: 70%;
   display: flex;
@@ -88,24 +94,24 @@
 
 .column-text {
   color: #0c3e3e;
-  font-size: 17px;
+  font-size: 1.3vw; /* Changed from 17px to 1.7vw */
   font-family: 'Abhaya libre', serif;
-  margin: 10px 50px;
+  margin: 1vh 5vw; /* Changed from 10px 50px to 1vh 5vw */
   text-align: left;
 }
 
 .banner3 {
   position: absolute;
-  top: 680px;
+  top: 110vh; /* Changed from 680px to 68vh */
   left: 0;
   width: 100%;
-  height: 420px;
+  height: 80vh; /* Changed from 420px to 42vh */
   background-color: #e9841d;
 }
 
 .columns3 {
   position: absolute;
-  top: 10px;
+  top: 1vh; /* Changed from 10px to 1vh */
   left: 0;
   width: 100%;
   display: flex;
@@ -114,17 +120,17 @@
 
 .column3-text {
   color: #0c3e3e;
-  font-size: 17px;
+  font-size: 1.3vw; /* Changed from 17px to 1.7vw */
   font-family: 'Abhaya libre', serif;
-  margin: 0 50px;
+  margin: 0 5vw; /* Changed from 0 50px to 0 5vw */
   text-align: left;
 }
 
 .column3-title {
   color: #0c3e3e;
-  font-size: 30px;
+  font-size: 2.2vw; /* Changed from 30px to 3vw */
   font-family: 'Bungee', sans-serif;
-  margin: 0 50px;
+  margin: 0 5vw; /* Changed from 0 50px to 0 5vw */
   text-align: left;
 }
 
@@ -132,16 +138,16 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-right: 100px;
+  margin-right: 10vw; /* Changed from 100px to 10vw */
 }
 
 .sebastian-image {
-  width: 170%;
+  width: 250%;
   height: auto;
-  margin-left: -20px;
-  margin-right: 35px;
-  border: 4px solid #B1DCDC;
-  margin-top: 80px;
+  margin-left: -4vw; /* Changed from -20px to -2vw */
+  margin-right: 6vw; /* Changed from 35px to 3.5vw */
+  border: 0.4vw solid #B1DCDC; /* Changed from 4px to 0.4vw */
+  margin-top: 8vh; /* Changed from 80px to 8vh */
 }
 
 .footer {
@@ -150,72 +156,71 @@
   bottom: 0;
   width: 100%;
   background-color: #0c3e3e;
-  padding: 10px 0;
+  padding: 1vh 0; /* Changed from 10px to 1vh */
   z-index: 1000;
 }
 
 .footer a {
   color: #fbf1dd;
-  margin: 0 30px;
+  margin: 0 3vw; /* Changed from 0 30px to 0 3vw */
 }
 
 .banner4 {
   position: absolute;
-  top: 1100px;
+  top: 190vh; /* Changed from 1100px to 110vh */
   left: 0;
-  width: 60%;
-  height: 1000px;
+  width: 100%;
+  height: 150vh; /* Changed from 1000px to 100vh */
   background-color: #B1DCDC;
-}
-
-.banner4::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -30;
-  width: 117%; /* Adjust this value to cover the desired area */
-  height: 100%;
-  background-color: #fbf1dd;
-  z-index: -1; /* This ensures the pseudo-element is behind other content */
 }
 
 
 .slide-title {
   color: #e9841d;
   font-family: 'Bungee', sans-serif;
-  font-size: 200%;
+  font-size: 2.2vw; /* Changed from 200% to 20vw */
   text-align: left;
-  margin: 0 200px
+  margin: 0 20vw; /* Changed from 0 200px to 0 20vw */
 }
 
 .slide-text {
   color: #0c3e3e;
   font-family: 'Abhaya Libre', serif;
-  font-size: 17px;
-  margin-left: 200px;
-  margin-right: 200px;
+  font-size: 1.3vw; /* Changed from 17px to 1.7vw */
+  margin-left: 20vw; /* Changed from 200px to 20vw */
+  margin-right: 20vw; /* Changed from 200px to 20vw */
   text-align: left;
-
 }
 
-.slide-image {
-  width: 30%;
+.slide-image_1 {
+  width: 20vw; /* Adjust as needed */
   height: auto;
-  margin-top: 60px;
-  border: 4px solid #e9841d;
+  margin-top: 6vh; /* Adjust as needed */
+  border: 0.4vw solid #e9841d; /* Adjust as needed */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.slide-image_2 {
+  width: 40vw; /* Adjust as needed */
+  height: auto;
+  margin-top: 4vh; /* Adjust as needed */
+  border: 0.2vw solid #e9841d; /* Adjust as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .banner-button {
   font-family: 'Bungee', serif;
   color: #0c3e3e;
   background: none;
   border: none;
-  font-size: 17px;
-  margin: 2px;
-  padding-right: 20px; /* Add this line */
+  font-size: 1.7vw; /* Changed from 17px to 1.7vw */
+  margin: 0.2vw; /* Changed from 2px to 0.2vw */
+  padding-right: 2vw; /* Changed from 20px to 2vw */
 }
 
 .slider-logo-container {
@@ -226,63 +231,59 @@
 }
 
 .slider-logo {
-  position: absolute;
-  top: 1200px; /* Adjust this to match the top position of the slider */
-  left: 62%; /* Adjust this to position the logo to the right of the slider */
-  height: 500px;
-  width: auto;
-  z-index: 5;
+  width: 20vw; /* Adjust as needed */
+  height: auto;
+  margin-top: 4vh; /* Adjust as needed */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
-
-
 
 
 /* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .logo {
-    height: 100px;
+    height: 10vh; /* Changed from 100px to 10vh */
   }
 
   .header-text {
-    font-size: 30px;
-    margin-left: 100px;
+    font-size: 4vw; /* Changed from 30px to 4vw */
+    margin-left: 10vw; /* Changed from 100px to 10vw */
   }
 
   .banner {
-    top: 100px;
-    height: 100px;
+    top: 10vh; /* Changed from 100px to 10vh */
+    height: 10vh; /* Changed from 100px to 10vh */
   }
 
   .banner2 {
-    top: 160px;
-    height: 120px;
+    top: 16vh; /* Changed from 160px to 16vh */
+    height: 12vh; /* Changed from 120px to 12vh */
   }
 
   .banner2-text {
-    font-size: 20px;
+    font-size: 2vw; /* Changed from 20px to 2vw */
   }
 
   .title {
-    top: 250px;
-    font-size: 25px;
+    top: 25vh; /* Changed from 250px to 25vh */
+    font-size: 2.5vw; /* Changed from 25px to 2.5vw */
   }
 
   .columns {
-    top: 320px;
+    top: 32vh; /* Changed from 320px to 32vh */
     flex-direction: column;
     align-items: center;
   }
 
   .column-text {
-    font-size: 14px;
+    font-size: 1.4vw; /* Changed from 14px to 1.4vw */
     margin: 0;
     text-align: center;
   }
 
   .banner3 {
-    top: 600px;
+    top: 60vh; /* Changed from 600px to 60vh */
     height: auto;
   }
 
@@ -292,55 +293,55 @@
   }
 
   .column3-text {
-    font-size: 14px;
+    font-size: 1.4vw; /* Changed from 14px to 1.4vw */
     margin: 0;
     text-align: center;
   }
 
   .column3-title {
-    font-size: 25px;
-    margin-bottom: 5px;
+    font-size: 2.5vw; /* Changed from 25px to 2.5vw */
+    margin-bottom: 0.5vh; /* Changed from 5px to 0.5vh */
   }
 
   .sebastian-image {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 2vh; /* Changed from 20px to 2vh */
   }
 
   .footer {
-    padding: 5px 0;
+    padding: 0.5vh 0; /* Changed from 5px to 0.5vh */
     display: flex;
     justify-content: center;
   }
 
   .footer a {
-    font-size: 14px;
+    font-size: 1.4vw; /* Changed from 14px to 1.4vw */
   }
 
   .banner4 {
-    top: 750px;
+    top: 75vh; /* Changed from 750px to 75vh */
     height: auto;
   }
 
   .slide-title {
-    font-size: 160%;
+    font-size: 16vw; /* Changed from 160% to 16vw */
   }
 
   .slide-text {
-    font-size: 12px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 1.2vw; /* Changed from 12px to 1.2vw */
+    margin-left: 5vw; /* Changed from 50px to 5vw */
+    margin-right: 5vw; /* Changed from 50px to 5vw */
     text-align: center;
   }
 
   .slide-image {
-    width: 80%;
-    margin-top: 20px;
-    border-width: 2px;
+    width: 80vw; /* Changed from 80% to 80vw */
+    margin-top: 2vh; /* Changed from 20px to 2vh */
+    border-width: 0.2vw; /* Changed from 2px to 0.2vw */
   }
 
   .banner-button {
-    font-size: 12px;
-    margin: 3px;
+    font-size: 1.2vw; /* Changed from 12px to 1.2vw */
+    margin: 0.3vw; /* Changed from 3px to 0.3vw */
   }
 }
