@@ -324,10 +324,11 @@ body {
     justify-content: center;
     max-width: 100%; /* This will limit the width of the footer */
     z-index: 5;
+    overflow-x: hidden; /* This will hide any horizontal overflow */
   }
 
   .footer a {
-    font-size: 1vw; /* Changed from 14px to 1.4vw */
+    font-size: 3vw; /* Changed from 14px to 1.4vw */
   }
 
   .banner4 {
